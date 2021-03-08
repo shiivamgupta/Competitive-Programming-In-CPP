@@ -1,0 +1,22 @@
+https://practice.geeksforgeeks.org/problems/array-subset-of-another-array2317
+----------------------------------------------------------
+string isSubset(int a1[], int a2[], int n, int m) {
+    int i = 0,j = 0;
+    for(i=0;i<m;i++)
+    {
+        for(j=0;j<n;j++)
+        {
+            if(a2[i] == a1[j]){
+            break;
+            }
+        }
+            
+        if(j==n){
+            string str1 = "No";
+            return str1;
+        }
+    }
+    string str2 = "Yes";
+    return str2;
+}
+------------------------------------------------------------
